@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Screen</title>
+
+    
+     <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #faf9f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.linkedin-logo {
+    margin-bottom: 20px;
+}
+
+.linkedin-logo img {
+    width: 100px;
+    position: absolute;
+    left: 20px;
+    top: 8px;
+    font-size: 12px;
+    cursor: pointer;
+    color: #0073b1;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.btn-google {
+    color: #000;
+    background-color: #fff;
+}
+
+.btn-google:hover {
+    background-color: #f0f0f0;
+}
+
+.btn-apple {
+    color: #000;
+    background-color: #fff;
+}
+
+.btn-apple:hover {
+    background-color: #f0f0f0;
+}
+
+.divider {
+    position: relative;
+    margin: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background-color: #ddd;
+}
+
+.divider::before {
+    left: 0;
+}
+
+.divider::after {
+    right: 0;
+}
+
+.divider span {
+    background-color: #fff;
+    padding: 0 10px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.show-password {
+    position: absolute;
+    right: 20px;
+    top: 8px;
+    font-size: 12px;
+    cursor: pointer;
+    color: #0073b1;
+}
+
+.forgot-password {
+    display: block;
+    margin-bottom: 15px;
+    text-align: left;
+    color: #0073b1;
+    font-size: 12px;
+}
+
+.btn-signin {
+    background-color: #0073b1;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-signin:hover {
+    background-color: #005f90;
+}
+
+.join-now {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.join-now a {
+    color: #0073b1;
+    text-decoration: none;
+}
+
+.footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+}
+
+.footer a {
+    color: #0073b1;
+    text-decoration: none;
+}
+
+.footer p {
+    margin: 20px 0;
+}
+
+     </style>
+</head>
+<body>
+
+    <!-- LinkedIn Logo Section -->
+    <div class="linkedin-logo">
+        <img src="https://freelogopng.com/images/all_img/1656958733linkedin-logo-png.png" alt="LinkedIn Logo">
+    </div>
+
+    <!-- Login Container -->
+    <div class="login-container">
+        <h2>Sign in</h2>
+
+        <!-- Google Button -->
+        <button class="btn-google">
+            <img src="https://www.abondance.com/Bin/g-4-couleurs-google.png" alt="Google Logo">
+            Continue with Google
+        </button>
+
+        <button class="btn-apple">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Logo">
+            Sign in with Apple
+        </button>
+
+        <!-- Divider -->
+        <div class="divider">
+            <span>or</span>
+        </div>
+
+        <!-- Login Form -->
+        <form action="#">
+            <div class="input-group">
+                <input type="text" id="email" name="email" placeholder="Email or phone">
+            </div>
+
+            <div class="input-group">
+                <input type="password" id="password" name="password" placeholder="Password">
+                <span class="show-password">Show</span>
+            </div>
+
+            <a href="#" class="forgot-password">Forgot password?</a>
+
+            <button type="submit" class="btn-signin">Sign in</button>
+        </form>
+
+        <!-- Join Now Section -->
+        <div class="join-now">
+            New to LinkedIn? <a href="#">Join now</a>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>
+            LinkedIn &copy; 2024 &nbsp;&bull;&nbsp;
+            <a href="#">User Agreement</a> &nbsp;&bull;&nbsp;
+            <a href="#">Privacy Policy</a> &nbsp;&bull;&nbsp;
+            <a href="#">Community Guidelines</a> &nbsp;&bull;&nbsp;
+            <a href="#">Cookie Policy</a> &nbsp;&bull;&nbsp;
+            <a href="#">Copyright Policy</a> &nbsp;&bull;&nbsp;
+            <a href="#">Send Feedback</a> &nbsp;&bull;&nbsp;
+            <a href="#">Language</a>
+        </p>
+    </div>
+
+</body>
+</html>
